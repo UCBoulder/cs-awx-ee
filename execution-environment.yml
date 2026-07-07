@@ -23,3 +23,6 @@ additional_build_steps:
     - RUN git lfs install --system
     # SymLink `python` -> `python3.12`
     - RUN alternatives --install /usr/bin/python python /usr/bin/python3.12 312
+    - ENV ANSIBLE_DEPRECATION_WARNINGS=False
+    - ENV ANSIBLE_HOST_KEY_CHECKING=False
+    - ENV ANSIBLE_INJECT_FACTS_AS_VARS=True
