@@ -1,17 +1,20 @@
-# SEPE-specific, copied from GREQ0302203
-# wazh7587 03/06/2024 commenting to test bump from 6.7.0 to 8.7.0, the max version for python 3.9.18
-# ansible==6.7.0
-ansible==8.7.0
-# Workaround to address pyOpenSSL version issues with ansible-runner (see https://github.com/ansible/ansible-runner/issues/1138)
-# wazh7587 03/062024 commenting as this appears to have been fixed upstream, test bump from 2.2.1 to 2.3.6
-# ansible-runner>=2.2.1
-ansible-runner==2.4.1
+ansible-runner
 # Upstream hasn't packaged as collection yet: https://github.com/TerryHowe/ansible-modules-hashivault/issues/234
 ansible-modules-hashivault==5.4.0
-# Required a number of places including community.general
-jmespath==1.0.1
-# Required by community.general LDAP plugins
-python-ldap==3.4.4
+jmespath
 
-# wazh7587 03/27/2024 Added from awx-ee for containerized receptor mesh support
-receptorctl==1.5.5
+git+https://github.com/ansible/awx.git@devel#subdirectory=awxkit
+git+https://github.com/ansible/ansible-sign
+ncclient
+paramiko
+pykerberos
+pyOpenSSL
+pypsrp[kerberos,credssp]
+pywinrm[kerberos,credssp]
+toml
+pexpect>=4.5
+python-daemon
+pyyaml
+six
+receptorctl
+python-ldap
