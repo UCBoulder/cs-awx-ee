@@ -1,4 +1,3 @@
-ansible
 ansible-runner
 # Upstream hasn't packaged as collection yet: https://github.com/TerryHowe/ansible-modules-hashivault/issues/234
 ansible-modules-hashivault==5.4.0
