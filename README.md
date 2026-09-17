@@ -1,4 +1,4 @@
-# SEPE AWX EE
+# CSCI AWX EE
 
 A Custom Ansible Execution Environment for Platform Engineering using
 python 3.9.18.
